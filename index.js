@@ -9,7 +9,7 @@ require("./models/Product");
 const app = express();
 mongoose.Promise = global.Promise;
 mongoose.connect(
-  process.env.MONGODB_URI || `mongodb://localhost:27017/userDB`,
+  process.env.MONGODB_URI || `mongodb://localhost:27017/loginDB`,
   { useNewUrlParser: true, useUnifiedTopology: true }
 );
 

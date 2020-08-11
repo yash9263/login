@@ -7,7 +7,7 @@ module.exports = (app) => {
     return res.status(200).send(products);
   });
 
-  app.post(`/api/products`, async (req, res) => {
+  app.post(`/api/product`, async (req, res) => {
     let product = await Product.create(req.body);
     return res.status(201).send({
       error: false,
