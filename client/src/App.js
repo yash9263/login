@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import LoginForm from "./components/LoginForm";
 //SERVICES
 import productService from "./services/productService";
 
@@ -36,6 +36,7 @@ function App() {
           <p>No products found</p>
         )}
       </ul>
+      <LoginForm />
     </div>
   );
 }
